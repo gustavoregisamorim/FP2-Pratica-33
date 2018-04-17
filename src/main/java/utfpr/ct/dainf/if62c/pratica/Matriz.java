@@ -48,7 +48,7 @@ public class Matriz {
     public Matriz soma(Matriz m) {
         
         int i,j;
-        Matriz aux = new Matriz(3,2);
+        Matriz aux = new Matriz(mat.length,mat[0].length);
         
         for(i=0; i<3; i++){
             for(j=0; j<2; j++){
@@ -67,7 +67,7 @@ public class Matriz {
     public Matriz prod(Matriz m) {
         
         int i,j,k;
-        Matriz aux = new Matriz(3,2);
+        Matriz aux = new Matriz(mat.length,m.mat[0].length);
         double v = 0.0;
         
         for(i=0; i<mat.length; i++){
