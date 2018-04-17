@@ -47,11 +47,11 @@ public class Matriz {
      */
     public Matriz soma(Matriz m) {
         
-        int i,j;
         Matriz aux = new Matriz(mat.length,mat[0].length);
+        int i,j;
         
-        for(i=0; i<3; i++){
-            for(j=0; j<2; j++){
+        for(i=0; i<mat.length; i++){
+            for(j=0; j<mat[0].length; j++){
                 
                 aux.mat[i][j] = m.mat[i][j] + mat[i][j];
             }
